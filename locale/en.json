@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Workbuddy pool meter",
+    "description": "Shows the Workbuddy account pool in the sidebar footer: remaining credits at a glance, and on click the in-flight account, its model, live tokens per second, and today's spend.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Workbuddy 号池计量",
+    "description": "在侧栏底部显示 Workbuddy 号池状态：默认只显示剩余总积分，点击展开在途账号、调用的模型、实时生成速度与今日消耗。",
+    "detail": "docs/DETAIL.md"
+  }
+}

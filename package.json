@@ -1,0 +1,66 @@
+{
+  "name": "dsh-workbuddy-pool",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "Workbuddy 号池实时状态 + 设置界面：侧栏左下角显示剩余总积分，点击展开在途账号/模型/生成速度/今日消耗；面板地址、密钥与轮询间隔在 DSH 设置里直接改。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "workbuddy",
+    "workbuddy2api",
+    "sidebar"
+  ],
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "INSTALL.txt",
+    "assets",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "author": "ryanyang7899",
+  "homepage": "https://github.com/ryanyang7899/dsh-workbuddy-pool#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanyang7899/dsh-workbuddy-pool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanyang7899/dsh-workbuddy-pool/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

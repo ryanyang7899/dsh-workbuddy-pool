@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Workbuddy pool meter">
+  <defs>
+    <linearGradient id="wbpool-bg" x1="6" y1="4" x2="42" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#0ea5a4"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="42" height="42" rx="12" fill="url(#wbpool-bg)"/>
+  <path d="M14 34.5V27" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" opacity="0.55"/>
+  <path d="M24 34.5V20" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M34 34.5V24" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" opacity="0.75"/>
+  <path d="M27.6 12.5 20 22.2h5.4L22.2 30l8.4-10.4h-5.6l2.6-7.1Z" fill="#ffffff"/>
+</svg>

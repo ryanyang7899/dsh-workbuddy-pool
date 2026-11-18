@@ -1,0 +1,27 @@
+# dsh-workbuddy-pool bundle patch.
+#
+# 一行双面插件：Host 半轮询 Workbuddy 面板 API 并把结果缓存成一份快照，通过
+# `/workbuddy-pool/api` 交给浏览器半；浏览器半在侧栏左下角画那一行积分。
+#
+# 所有字段都有代码内默认值，这里留空即可：
+#   baseUrl         面板根地址；留空 = 自动探测 http://127.0.0.1:7863 / localhost:7863
+#   apiKey          面板主密钥；留空 = 读 WORKBUDDY_PANEL_KEY 或 ~/.dsh/workbuddy-panel.key
+#   intervalMs      Host 轮询面板的间隔（默认 15000）
+#   usageIntervalMs 今日用量的重取间隔（默认 60000）
+#   timeoutMs       单次上游请求超时（默认 8000）
+#
+# 面板不在本机时，在 profile 的 cordis.patch.yml 里用同 id 覆盖：
+#
+#   - id: workbuddy-pool
+#     name: 'dsh-workbuddy-pool'
+#     config:
+#       baseUrl: 'http://你的面板地址:7863'
+- insert:
+    - id: workbuddy-pool
+      name: 'dsh-workbuddy-pool'
+      config:
+        baseUrl: ''
+        apiKey: ''
+        intervalMs: 15000
+        usageIntervalMs: 60000
+        timeoutMs: 8000
